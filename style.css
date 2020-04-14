@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7em;
+  cursor: url("icon3.png"), pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.black {
+  background-color: #000;
+}
+
+.pd-1 {
+  padding-right: 80px;
+}
+
+.pd-3 {
+  padding-bottom: 40px;
+}
+
+.mg-1 {
+  margin-top: 20px;
+}
+
+.mg-2 {
+  margin-right: 40px;
+}
+
+.whole {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./pizza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+  background-color: #000;
+  padding-left: 50px;
+  overflow: auto;
+}
+
+.side-plz {
+  display: inline-block;
+  padding: 20px 0px;
+  vertical-align: middle;
+}
+
+.social {
+  display: inline-block;
+  width: calc(100% - 250px);
+  text-align: right;
+  padding: 20px 0px;
+}
+
+
+.menu {
+  padding-left: 60px;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+ul li {
+  margin-left: 35px;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.links{
+    color: white;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+.icons li {
+  padding-left: 15px;
+}
+
+.icons li a:hover {
+  transition: ease-in-out 0.2s;
+  font-size: 40px;
+    color: #e61a39;
+}
+
+
+/* ------------------- */
+/* Flexbox Pizza Menu */
+/* ------------------- */
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #000;
+}
+
+.pizza-menu {
+  width: 100%;
+}
+
+.pizza-menu h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #e61a39;
+}
+
+.box2 {
+  flex-basis: 33.33%;
+  color: #fff;
+}
+
+.shit {
+  background-image: url('./red.png');
+}
+
+.box2 p {
+  font-size: 16px;
+  margin: 0px 20px;
+  margin-top: 10px;
+}
+
+.box2 a {
+  display: block;
+  width: 60%;
+  text-decoration: none;
+  padding: 10px;
+  border: #fff 1px solid;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.box2 a:hover {
+  color: #e61a39;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+.box2 h3 {
+  padding-top: 30px;
+}
+
+.box2 h3,
+.box2 p,.box2 a {
+  text-align: center;
+}
+
+.box2 img {
+  display: block;
+  margin: 20px auto;
+}
+
+
+/* ------------------- */
+/* Flexbox Pizza Menu */
+/* ------------------- */
+
+
+.tagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tagline h1 {
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 40px;
+  border: #fff 1px solid;
+  border-radius: 3px;
+}
+
+.tagline a:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.tagline h1:hover{
+    transition: ease-in-out 2s;
+    color: #e61a39;
+    text-shadow: 2px 2px white;
+}
+
+.new1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #000;
+  margin: 0px 12px;
+  margin-bottom: 12px;
+}
+
+.on {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./red.png');
+}
+
+
+/* ------------------- */
+/* Flexbox Profile */
+/* ------------------- */
+
+#About {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #000;
+  text-align: justify;
+  background-color: #f5f3f3;
+}
+
+.pizza-menu {
+  margin-bottom: 30px;
+}
+
+.profile-pic h2, .profile-pic p {
+  text-align: center;
+}
+
+.profile-pic p, .submit {
+  font-size: 25px;
+  font-weight: 400;
+  color: #e61a39;
+}
+
+.profile-pic img {
+  display: block;
+  margin: 0px auto;
+}
+
+.profile-pic,.profile-desc {
+  flex-basis: 40%;
+  margin: 0px auto;
+}
+
+.Name {
+  font-size: 35px;
+  color: #e61a39;
+}
+
+
+
+
+

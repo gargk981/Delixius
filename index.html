@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Delixius</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="avatar.png">
+  </head>
+  <body>
+<form class="box" action="main.html" onsubmit='return formValidator()'>
+  <h1><br>Welcome Foodie!! <br> Login</h1>
+    <img class="avatar" src="avatar.png">
+  <input type="email" id="email" name="" placeholder="Email" required>
+
+  <input type="password" id="pass" name="" placeholder="Password" required>
+  <input type="submit" name="" value="Login" action="main.html" >
+    
+    <script>
+      function formValidator(){
+        var uname=document.getElementById("email");
+        var pass=document.getElementById("pass");
+        if(checkEmail(email,"Not a valid address"))
+						{
+            if(lengthRestrictor(pass,6,10,"Length of password must be between 6 and 10")){
+              return true;
+            }
+      }
+      return false;
+      }
+      function checkEmail(elem,msg)
+{
+	var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+	if(elem.value.match(emailExp)){
+		return true;
+	}else{
+		alert(msg);
+		elem.focus();
+		return false;
+	}
+}
+function lengthRestrictor(pass,min,max,msg)
+{
+	var len=pass.value;
+	if(len.length>=min && len.length<=max)
+	return true;
+else{
+	alert(msg)
+	return false;
+	}
+}
+        //var n = document.getElementById("name").value;
+        //localStorage.setItem("username", n);
+    </script>
+</form>
+</body>
+</html>
